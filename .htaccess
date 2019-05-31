@@ -1,0 +1,19 @@
+<Files ~ "\.(htaccess|htpasswd)$">
+
+deny from all
+
+</Files>
+
+ 
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+
+RewriteRule ^(.*)index.html$ http://pokkenlobby.com/$1 [R=301,L]
+
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} ^.*/index.php
+
+RewriteRule ^(.*)index.php$ http://pokkenlobby.com/$1 [R=301,L]

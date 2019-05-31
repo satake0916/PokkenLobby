@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+/* ========== すべて共通 ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+	background: #efefef;
+}
+body, div, p, h3,h2, h4, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	margin-top: 20px;
+}
+
+p, td, th, li {
+	line-height: 1.8;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: #709a00;
+}
+a:hover {
+	color: #95cd00;
+}
+a:active {
+	color: #4b6700;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* 共通の見出し */
+main h1 {
+	margin-bottom: 1rem;
+	border-bottom: 1px dashed #c84040;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 1000px;
+}
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+
+	.keyvisual {
+		margin: 0 auto;
+		max-width: 1000px;
+		background-repeat:repeat-y;
+	
+}
+
+/* ========== ヘッダー ========== */
+header {
+	background: #c84040;
+}
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-logo {
+	padding: 10px 0;
+	width: 150px;
+	height: 37px;
+}
+.menu-btn {
+	padding: 10px 0;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 40px;
+	height: 40px;
+	background: url(../images/hamburger.png) no-repeat center center;
+	background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+	.header-logo {
+		padding: 10px 0;
+		width: 180px;
+		height: 46px;
+	}
+	.menu-btn {
+		display: none;
+	}
+}
+
+/* ========== ナビゲーション ========== */
+nav {
+	background: #393939;
+}
+.navbar {
+	display: none;
+	list-style-type: none;
+}
+.navbar a {
+	display: block;
+	padding: 0.6rem 0;
+	color: #fff;
+	text-decoration: none;
+}
+.navbar a:hover {
+	background: #c84040;
+}
+
+@media screen and (min-width: 0px){
+	.navbar{
+		display: flex !important;
+	}
+	.navbar li{
+		flex: 1 1 auto;
+		text-align: center;
+	}
+	.navbar a.nav-current{
+		background: #c84040;
+	}
+}
+
+
+/* ========== メインエリア基本レイアウト ========== */
+main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #efefef;
+}
+
+
+/* ========== フッター ========== */
+footer {
+	background: #c84040;
+	font-size: 0.9rem;
+	color: #fff;
+}
+.footer-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer-nav {
+	list-style-type: none;
+}
+.footer-nav li {
+	display: inline;
+	padding: 0 1rem 0 0;
+}
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+.footer-nav a:hover {
+	opacity: 0.5;
+}
+
+/* ========== qanda よくある質問 ========== */
+.q-and-a {
+	margin-top: 1em;
+	padding: 8px 0 0 60px;
+}
+.question {
+	font-weight: bold;
+	color: #6eba44;
+	background: url(../images/q.png) no-repeat;
+	background-size: 40px 40px;
+}
+.answer {
+	margin-bottom: 2em;
+	background: url(../images/a.png) no-repeat;
+	background-size: 40px 40px;
+}
+
+
+
+
+input[type="text"]{
+	width: 50%;
+}
+
+
+
+/* お申込みボタン */
+input[type="submit"] {
+	display: block;
+	width: 200px;
+	padding: 8px 0;
+	margin: 2px 2px 2px 2px;
+	background-color: #709a00;
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+input[type="radio"] {
+	margin-bottom: 10px;
+}
+
+.login_button{
+	width: 200px;
+}
+
+.radio{
+	marker-end: 10px;
+	list-style-type: none;
+}
+
+#loading{
+	float: left;
+	padding-top: 5px;
+	padding-right: 2px;
+	width: 15px;
+	height: auto;
+}
+
+#lucario + label:after {
+	content: url(../images/lucario.png);
+	
+}
+#pikachu  + label:after {
+    content: url(../images/pikachu.png);
+}
+#machamp  + label:after {
+    content: url(../images/machamp.png);
+}
+#gardevoir  + label:after {
+    content: url(../images/gardevoir.png);
+}
+#weavile  + label:after {
+    content: url(../images/weavile.png);
+}
+#suicune  + label:after {
+    content: url(../images/suicune.png);
+}
+#charizard  + label:after {
+    content: url(../images/charizard.png);
+}
+#gengar  + label:after {
+    content: url(../images/gengar.png);
+}
+#blaziken  + label:after {
+    content: url(../images/blaziken.png);
+}
+#libre  + label:after {
+    content: url(../images/libre.png);
+}
+#sceptile  + label:after {
+    content: url(../images/sceptile.png);
+}
+#chandelure  + label:after {
+    content: url(../images/chandelure.png);
+}
+#mewtwo  + label:after {
+    content: url(../images/mewtwo.png);
+}
+#shadowmewtwo  + label:after {
+    content: url(../images/shadowmewtwo.png);
+}
+#garchomp  + label:after {
+    content: url(../images/garchomp.png);
+}
+#braixen  + label:after {
+    content: url(../images/braixen.png);
+}
+#darkrai  + label:after {
+    content: url(../images/darkrai.png);
+}
+#scizor  + label:after {
+    content: url(../images/scizor.png);
+}
+#croagunk  + label:after {
+    content: url(../images/croagunk.png);
+}
+#empeleon  + label:after {
+    content: url(../images/empeleon.png);
+}
+#decidueye  + label:after {
+    content: url(../images/decidueye.png);
+}
+#aegislash  + label:after {
+    content: url(../images/aegislash.png);
+}
+#blastoise  + label:after {
+    content: url(../images/blastoise.png);
+}
+
+#lucario + label:after,
+#pikachu + label:after,
+#machamp + label:after,
+#gardevoir + label:after,
+#weavile + label:after,
+#suicune + label:after,
+#charizard + label:after,
+#gengar + label:after,
+#blaziken + label:after,
+#libre + label:after,
+#sceptile + label:after,
+#chandelure + label:after,
+#mewtwo + label:after,
+#shadowmewtwo + label:after,
+#garchomp + label:after,
+#braixen + label:after,
+#darkrai + label:after,
+#scizor + label:after,
+#croagunk + label:after,
+#empeleon + label:after,
+#decidueye + label:after,
+#aegislash + label:after,
+#blastoise + label:after {
+	opacity: 0.5;
+}
+ 
+/* チェックされた選択肢の透過を無効に */
+#lucario:checked + label:after,
+#pikachu:checked + label:after,
+#machamp:checked + label:after,
+#gardevoir:checked + label:after,
+#weavile:checked + label:after,
+#suicune:checked + label:after,
+#charizard:checked + label:after,
+#gengar:checked + label:after,
+#blaziken:checked + label:after,
+#libre:checked + label:after,
+#sceptile:checked + label:after,
+#chandelure:checked + label:after,
+#mewtwo:checked + label:after,
+#shadowmewtwo:checked + label:after,
+#garchomp:checked + label:after,
+#braixen:checked + label:after,
+#darkrai:checked + label:after,
+#scizor:checked + label:after,
+#croagunk:checked + label:after,
+#empeleon:checked + label:after,
+#decidueye:checked + label:after,
+#aegislash:checked + label:after,
+#blastoise:checked + label:after {
+    opacity: 1;
+}
+
+#lucario,
+#pikachu,
+#machamp,
+#gardevoir,
+#weavile,
+#suicune,
+#charizard,
+#gengar,
+#blaziken,
+#libre,
+#sceptile,
+#chandelure,
+#mewtwo,
+#shadowmewtwo,
+#garchomp,
+#braixen,
+#darkrai,
+#scizor,
+#croagunk,
+#empeleon,
+#decidueye,
+#aegislash,
+#blastoise{
+    display: none;
+}
+ 
+/* 選択肢の文字を消す */
+#lucario + label,
+#pikachu + label,
+#machamp + label,
+#gardevoir + label,
+#weavile + label,
+#suicune + label,
+#charizard + label,
+#gengar + label,
+#blaziken + label,
+#libre + label,
+#sceptile + label,
+#chandelure + label,
+#mewtwo + label,
+#shadowmewtwo + label,
+#garchomp + label,
+#braixen + label,
+#darkrai + label,
+#scizor + label,
+#croagunk + label,
+#empeleon + label,
+#decidueye + label,
+#aegislash + label,
+#blastoise + label {
+    font-size: 0;
+}
+
+/*ついでに、必須ではありませんが次のようなCSSを使ってラジオボタンを横並びにしておきます。
+/* ラジオボタンを横並びに */
+.play_character{
+	display: inline-block;
+}
+
+.check{
+	display: block;
+}
