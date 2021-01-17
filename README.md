@@ -28,5 +28,5 @@ Webサービス「ポッ拳ロビー」のソースコード。
 
 ## スクリーンショット
 ![ホーム](screenshot/pokkenlobby_home.jpg)
-![対戦募集画面](screenshot/pokkenlobby_battleb.jpg)
-![ランキング](screenshot/pokkenlobby_ranking.jpg)
+![対戦募集画面](screenshot/pokkenlobby_battleb.png)
+![ランキング](screenshot/pokkenlobby_ranking.png)
