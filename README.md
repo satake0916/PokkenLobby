@@ -27,4 +27,6 @@ Webサービス「ポッ拳ロビー」のソースコード。
 同時オンライン人数も高々30人くらいのサービスだったのでうまくいったがもう少しちゃんと実装した方がいい。
 
 ## スクリーンショット
-![ホーム](screenshot/home.png)
+![ホーム](screenshot/pokkenlobby_home.jpg)
+![対戦募集画面](screenshot/pokkenlobby_battleb.jpg)
+![ランキング](screenshot/pokkenlobby_ranking.jpg)
